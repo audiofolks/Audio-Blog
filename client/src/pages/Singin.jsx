@@ -1,7 +1,6 @@
-import React from 'react'
 
-export default function Singin() {
+export default function SingIn() {
   return (
-    <div>Singin</div>
+    <div>SingIn</div>
   )
 }

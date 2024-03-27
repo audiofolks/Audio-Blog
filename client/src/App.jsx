@@ -4,20 +4,20 @@ import About from './pages/About'
 import SingUp from './pages/SingUp'
 import Projects from './pages/Projects'
 import Dashbord from './pages/Dashbord'
-import Singin from './pages/Singin'
+import SingIn from './pages/SingIn'
+import Header from './components/Header'
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Header/>
      <Routes>
-       <Route>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='sing-in' element={<Singin />} />
+        <Route path='/sing-in' element={<SingIn />} />
         <Route path='/sing-up' element={<SingUp />} />
         <Route path='/dashbord' element={<Dashbord />} />
         <Route path='/Projects' element={<Projects />} />
-       </Route>
      </Routes>
     </BrowserRouter>
   )
